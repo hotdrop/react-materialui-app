@@ -1,0 +1,44 @@
+{
+  "name": "react-materialui-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./compiled/server.js",
+    "build": "npm run clean && npm run build:server && npm run build:src",
+    "build:server": "babel ./server --out-dir ./compiled",
+    "build:src": "webpack --config webpack.config.js",
+    "clean": "rm -rf static && rm -rf compiled"
+  },
+  "author": "supaiku2452",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "babel-core": "^6.20.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.16.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "material-ui": "^0.16.5",
+    "pg": "^6.1.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.1.0",
+    "webpack-dev-middleware": "^1.8.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.16.0",
+    "webpack": "^1.14.0"
+  }
+}
