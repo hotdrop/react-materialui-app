@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node ./compiled/server.js",
+    "start": "npm run build && node ./compiled/server.js",
     "build": "npm run clean && npm run build:server && npm run build:src",
     "build:server": "babel ./server --out-dir ./compiled",
     "build:src": "webpack --config webpack.config.js",
